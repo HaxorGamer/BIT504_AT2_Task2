@@ -46,8 +46,8 @@ public class Board {
 		if(cells[playerRow][0].content == thePlayer && cells[playerRow][1].content == thePlayer && cells[playerRow][2].content == thePlayer )
 			return true; 
 		
-		 // 
-		 //  
+		
+		 // this will check each column if a player has 3-in-a-row
 		if(cells[0][playerCol].content == thePlayer && cells[1][playerCol].content == thePlayer && cells[2][playerCol].content == thePlayer )
 			return true;
 		
@@ -57,8 +57,8 @@ public class Board {
 			return true;
 		 
 		
-		// TODO: Check the diagonal in the other direction
-		if( cells[0][2].content == thePlayer && cells[1][1].content == thePlayer && cells[2][0].content == thePlayer)
+		// this will check the diagonal from bottom left to top right
+		if( cells[2][0].content == thePlayer && cells[1][1].content == thePlayer && cells[0][2].content == thePlayer)
 			return true;
 
 		
